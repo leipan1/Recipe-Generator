@@ -1,0 +1,86 @@
+body{
+    overflow:scroll;
+}
+
+#filter{
+    position: fixed;
+    width: 33%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #D9D9D9;
+    overflow-y:scroll;
+}
+
+#filter-name{
+    font-family: 'Kadwa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    color: #000;
+}
+
+#hr2 {
+    border: none;
+    height: 1px;
+    background-color: #000;
+    color: #000;
+}
+
+.collapsible{
+    background:#D9D9D9;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+
+.content {
+    position: relative;
+    max-height: 0;  
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+.properties{
+    overflow-y:scroll;
+}
+
+
+.checklist{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.parent{
+    font-weight: bold;
+}
+
+.number{
+    font-size: 20px;
+    margin-left: 20px;
+}

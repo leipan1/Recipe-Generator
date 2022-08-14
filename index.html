@@ -3,7 +3,7 @@
     <head>
         <title>Recipe Generator</title>
 
-        <link rel="stylesheet" href="styles.css">
+        <link href="styles.css" type="text/css" rel="stylesheet">
 
         <meta charset="UTF-8">
         <meta name="description" content="Recipe Generator with filter">
@@ -15,6 +15,370 @@
     </head>
 
     <body>
-        
+        <div id="filter">
+            <h2 id="filter-name">Filters</h2>
+            <hr>
+
+            <button class="collapsible parent">Ingredients</button>
+            <div class="content properties">
+                <hr id="hr2">
+                <button class="collapsible">Dairy</button>
+                    <div class="content checklist">
+                        
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="milk" name="milk" value="milk">
+                            <label for="milk">milk</label><br>
+                            
+                            <input type="checkbox" id="egg" name="egg" value="egg">
+                            <label for="egg">egg</label><br>
+
+                            <input type="checkbox" id="butter" name="butter" value="butter">
+                            <label for="butter">butter</label><br>
+
+                            <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                            <label for="cheese">cheese</label><br>
+
+                            <input type="checkbox" id="yogurt" name="yogurt" value="yogurt">
+                            <label for="yogurt">yogurt</label><br>
+
+                            <input type="checkbox" id="cream" name="cream" value="cream">
+                            <label for="cream">cream</label><br>
+                        </form>
+
+                    </div>
+
+
+                <button class="collapsible">Fruit</button>
+                    <div class="content checklist">
+
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="apples" name="apples" value="apples">
+                            <label for="apples">apples</label><br>
+                            
+                            <input type="checkbox" id="avocados" name="avocados" value="avocados">
+                            <label for="egg">avocados</label><br>
+
+                            <input type="checkbox" id="bananas" name="bananas" value="bananas">
+                            <label for="bananas">bananas</label><br>
+
+                            <input type="checkbox" id="blackberries" name="blackberries" value="blackberries">
+                            <label for="blackberries">blackberries</label><br>
+
+                            <input type="checkbox" id="blueberries" name="blueberries" value="blueberries">
+                            <label for="blueberries">blueberries</label><br>
+
+                            <input type="checkbox" id="cantaloupe" name="cantaloupe" value="cantaloupe">
+                            <label for="cantaloupe">cantaloupe</label><br>
+                            
+                            <input type="checkbox" id="cherries" name="cherries" value="cherries">
+                            <label for="cherries">cherries</label><br>
+
+                            <input type="checkbox" id="clementine" name="clementine" value="clementine">
+                            <label for="clementine">clementine</label><br>
+
+                            <input type="checkbox" id="grapes" name="grapes" value="grapes">
+                            <label for="grapes">grapes</label><br>
+
+                            <input type="checkbox" id="lemons" name="lemons" value="lemons">
+                            <label for="lemons">lemons</label><br>
+
+                            <input type="checkbox" id="limes" name="limes" value="limes">
+                            <label for="limes">limes</label><br>
+
+                            <input type="checkbox" id="mangoes" name="mangoes" value="mangoes">
+                            <label for="mangoes">mangoes</label><br>
+
+                            <input type="checkbox" id="oranges" name="oranges" value="oranges">
+                            <label for="oranges">oranges</label><br>
+
+                            <input type="checkbox" id="peaches" name="peaches" value="peaches">
+                            <label for="peaches">peaches</label><br>
+
+                            <input type="checkbox" id="pears" name="pears" value="pears">
+                            <label for="pears">pears</label><br>
+
+                            <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                            <label for="pineapple">pineapple</label><br>
+
+                            <input type="checkbox" id="plums" name="plums" value="plums">
+                            <label for="plums">plums</label><br>
+
+                            <input type="checkbox" id="raspberries" name="raspberries" value="raspberries">
+                            <label for="raspberries">raspberries</label><br>
+
+                            <input type="checkbox" id="strawberries" name="strawberries" value="strawberries">
+                            <label for="strawberries">strawberries</label><br>
+
+                            <input type="checkbox" id="watermelon" name="watermelon" value="watermelon">
+                            <label for="watermelon">watermelon</label><br>
+
+                        </form>
+
+                    </div>
+
+                <button class="collapsible">Proteins</button>
+                    <div class="content checklist">
+
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="almonds" name="almonds" value="almonds">
+                            <label for="almonds">almonds</label><br>
+                            
+                            <input type="checkbox" id="beef" name="beef" value="beef">
+                            <label for="beef">beef</label><br>
+
+                            <input type="checkbox" id="chicken" name="chicken" value="chicken">
+                            <label for="chicken">chicken</label><br>
+
+                            <input type="checkbox" id="chickpeas" name="chickpeas" value="chickpeas">
+                            <label for="chickpeas">chickpeas</label><br>
+
+                            <input type="checkbox" id="clams" name="clams" value="clams">
+                            <label for="clams">clams</label><br>
+
+                            <input type="checkbox" id="crab" name="crab" value="crab">
+                            <label for="crab">crab</label><br>
+                            
+                            <input type="checkbox" id="fish" name="fish" value="fish">
+                            <label for="fish">fish</label><br>
+
+                            <input type="checkbox" id="lamb" name="lamb" value="lamb">
+                            <label for="lamb">lamb</label><br>
+
+                            <input type="checkbox" id="lentils" name="lentils" value="lentils">
+                            <label for="lentils">lentils</label><br>
+
+                            <input type="checkbox" id="lobster" name="lobster" value="lobster">
+                            <label for="lobster">lobster</label><br>
+
+                            <input type="checkbox" id="mussels" name="mussels" value="mussels">
+                            <label for="mussels">mussels</label><br>
+
+                            <input type="checkbox" id="oysters" name="oysters" value="oysters">
+                            <label for="oysters">oysters</label><br>
+
+                            <input type="checkbox" id="pork" name="pork" value="pork">
+                            <label for="pork">pork</label><br>
+
+                            <input type="checkbox" id="prawns" name="prawns" value="prawns">
+                            <label for="prawns">prawns</label><br>
+
+                            <input type="checkbox" id="scallops" name="scallops" value="scallops">
+                            <label for="scallops">scallops</label><br>
+
+                            <input type="checkbox" id="tofu" name="tofu" value="tofu">
+                            <label for="tofu">tofu</label><br>
+
+                            <input type="checkbox" id="turkey" name="turkey" value="turkey">
+                            <label for="turkey">turkey</label><br>
+
+                            <input type="checkbox" id="walnuts" name="walnuts" value="walnuts">
+                            <label for="walnuts">walnuts</label><br>
+
+                        </form>
+
+                    </div>
+
+                <button class="collapsible">Vegetable</button>
+                    <div class="content checklist">
+
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="bellpeppers" name="bellpeppers" value="bellpeppers">
+                            <label for="bellpeppers">bell peppers</label><br>
+                            
+                            <input type="checkbox" id="broccoli" name="broccoli" value="broccoli">
+                            <label for="broccoli">broccoli</label><br>
+
+                            <input type="checkbox" id="carrots" name="carrots" value="carrots">
+                            <label for="carrots">carrots</label><br>
+
+                            <input type="checkbox" id="celery" name="celery" value="celery">
+                            <label for="celery">celery</label><br>
+
+                            <input type="checkbox" id="corn" name="corn" value="corn">
+                            <label for="corn">corn</label><br>
+
+                            <input type="checkbox" id="cucumbers" name="cucumbers" value="cucumbers">
+                            <label for="cucumbers">cucumbers</label><br>
+                            
+                            <input type="checkbox" id="garlic" name="garlic" value="garlic">
+                            <label for="garlic">garlic</label><br>
+
+                            <input type="checkbox" id="lettuce" name="lettuce" value="lettuce">
+                            <label for="lettuce">lettuce</label><br>
+
+                            <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                            <label for="mushrooms">mushrooms</label><br>
+
+                            <input type="checkbox" id="onions" name="onions" value="onions">
+                            <label for="onions">onions</label><br>
+
+                            <input type="checkbox" id="potatoes" name="potatoes" value="potatoes">
+                            <label for="potatoes">potatoes</label><br>
+
+                            <input type="checkbox" id="spinach" name="spinach" value="spinach">
+                            <label for="spinach">spinach</label><br>
+
+                            <input type="checkbox" id="tomatoes" name="tomatoes" value="tomatoes">
+                            <label for="tomatoes">tomatoes</label><br>
+
+                        </form>
+
+                    </div>
+
+                <button class="collapsible">Grains</button>
+                    <div class="content checklist">
+
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="amaranth" name="amaranth" value="amaranth">
+                            <label for="amaranth">amaranth</label><br>
+                            
+                            <input type="checkbox" id="barley" name="barley" value="barley">
+                            <label for="barley">barley</label><br>
+
+                            <input type="checkbox" id="bulgur" name="bulgur" value="bulgur">
+                            <label for="bulgur">bulgur</label><br>
+
+                            <input type="checkbox" id="farro" name="farro" value="farro">
+                            <label for="farro">farro</label><br>
+
+                            <input type="checkbox" id="freekeh" name="freekeh" value="freekeh">
+                            <label for="freekeh">freekeh</label><br>
+
+                            <input type="checkbox" id="kamut" name="kamut" value="kamut">
+                            <label for="kamut">kamut</label><br>
+                            
+                            <input type="checkbox" id="oats" name="oats" value="oats">
+                            <label for="oats">oats</label><br>
+
+                            <input type="checkbox" id="quinoa" name="quinoa" value="quinoa">
+                            <label for="quinoa">quinoa</label><br>
+
+                            <input type="checkbox" id="rice" name="rice" value="rice">
+                            <label for="rice">rice</label><br>
+
+                            <input type="checkbox" id="spelt" name="spelt" value="spelt">
+                            <label for="spelt">spelt</label><br>
+
+                            <input type="checkbox" id="wildrice" name="wildrice" value="wildrice">
+                            <label for="wildrice">wild rice</label><br>
+
+                        </form>
+
+                    </div>
+
+                <button class="collapsible">Others</button>
+                    <div class="content checklist">
+
+                        <form action="filter_page.php">
+                            <input type="checkbox" id="coffee" name="coffee" value="coffee">
+                            <label for="coffee">coffee</label><br>
+                            
+                            <input type="checkbox" id="flour" name="flour" value="flour">
+                            <label for="flour">flour</label><br>
+
+                            <input type="checkbox" id="honey" name="honey" value="honey">
+                            <label for="honey">honey</label><br>
+
+                            <input type="checkbox" id="oil" name="oil" value="oil">
+                            <label for="oil">oil</label><br>
+
+                            <input type="checkbox" id="pasta" name="pasta" value="pasta">
+                            <label for="pasta">pasta</label><br>
+
+                            <input type="checkbox" id="pepper" name="pepper" value="pepper">
+                            <label for="pepper">pepper</label><br>
+                            
+                            <input type="checkbox" id="salt" name="salt" value="salt">
+                            <label for="salt">salt</label><br>
+
+                            <input type="checkbox" id="tea" name="tea" value="tea">
+                            <label for="tea">tea</label><br>
+
+                            <input type="checkbox" id="thyme" name="thyme" value="thyme">
+                            <label for="thyme">thyme</label><br>
+
+                            <input type="checkbox" id="vinegar" name="vinegar" value="vinegar">
+                            <label for="vinegar">vinegar</label><br>
+
+                        </form>
+
+                    </div>
+
+            </div>
+            <hr>
+
+
+            <button class="collapsible parent">Diet</button>
+            <div class="content checklist">
+                <form action="filter_page.php">
+                    <input type="checkbox" id="mediterranean" name="mediterranean" value="mediterranean">
+                    <label for="mediterranean">mediterranean</label><br>
+                    
+                    <input type="checkbox" id="keto" name="keto" value="keto">
+                    <label for="keto">keto</label><br>
+
+                    <input type="checkbox" id="vegan" name="vegan" value="vegan">
+                    <label for="vegan">vegan</label><br>
+
+                    <input type="checkbox" id="paleo" name="paleo" value="paleo">
+                    <label for="paleo">paleo</label><br>
+
+                    <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">
+                    <label for="vegetarian">vegetarian</label><br>
+
+                    <input type="checkbox" id="kosher" name="kosher" value="kosher">
+                    <label for="kosher">kosher</label><br>
+
+                    <input type="checkbox" id="halal" name="halal" value="halal">
+                    <label for="halal">halal</label><br>
+
+                    <input type="checkbox" id="glutenfree" name="glutenfree" value="glutenfree">
+                    <label for="glutenfree">gluten free</label><br>
+                </form>
+            </div>
+            <hr>
+
+            <button class="collapsible parent">Time</button>
+            <div class="content number">
+                <form action="filter_page.php">
+                    <label for="quantity">Maximum minutes(ex: for 1h10m type in 70 -- type 0 for no preference):</label>
+                    <input type="number" id="minutes" name="minutes" min="0">
+                </form>
+            </div>
+            <hr>
+
+            <button class="collapsible parent">Calorie</button>
+            <div class="content number">
+                <form action="filter_page.php">
+                    <label for="quantity">Maximum calories(type 0 for no preference):</label>
+                    <input type="number" id="calories" name="calories" min="0">
+                </form>
+            </div>
+            <hr>
+
+            <button class="collapsible parent">Meal</button>
+            <div class="content checklist">
+                <form action="filter_page.php">
+                    <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+                    <label for="breakfast">breakfast</label><br>
+                    
+                    <input type="checkbox" id="lunch" name="lunch" value="lunch">
+                    <label for="lunch">lunch</label><br>
+
+                    <input type="checkbox" id="dinner" name="dinner" value="dinner">
+                    <label for="dinner">dinner</label><br>
+
+                    <input type="checkbox" id="brunch" name="brunch" value="brunch">
+                    <label for="brunch">brunch</label><br>
+
+                    <input type="checkbox" id="dessert" name="dessert" value="dessert">
+                    <label for="dessert">dessert</label><br>
+                </form>
+            </div>
+            <hr>
+
+            
+            <script src="collapsible.js"></script>
+        </div>
     </body>
 </html>
