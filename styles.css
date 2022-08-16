@@ -1,5 +1,5 @@
 body{
-    overflow:scroll;
+    position: relative;
 }
 
 #filter{
@@ -83,4 +83,58 @@ hr {
 .number{
     font-size: 20px;
     margin-left: 20px;
+}
+
+#generate{
+    font-size: 20px;
+    font-weight:300;
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#recipelist{
+    position: fixed;
+    width: 67%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    overflow-y:scroll;
+    font-size: x-large;
+    text-align: center;
+}
+
+.button{
+    background-color: white;
+    border: none;
+    padding: 15px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.button:hover {
+    background-color: grey;
+  }
+
+
+.sidebaropen{
+    height: 100%;
+    width: 200px;
+    background-color: pink;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    text-align: left;
+    padding:8px 16px;
+    display: block;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: none;
 }
