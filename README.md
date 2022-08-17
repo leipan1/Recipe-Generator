@@ -18,7 +18,6 @@ _TBD_
 _N/A_
 
 ## Author
-.h
 Github: @leipan1
 
 ## Version History
