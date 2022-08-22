@@ -10,9 +10,7 @@ Link to prototype: [Figma](https://www.figma.com/file/miWyqaio7Ogt2hdiPy8Tw9/Rec
 _The prototype is subject to change. Some features may be missing or partially implemented in the prototype_
 
 
-![alt text](https://github.com/[leipan1]/[Recipe-Generator]/blob/[main]Recipe-Generator/images/ss/Screenshot 2022-08-22 034955.png?raw=true)
-
-![Screenshot](images\ss\Screenshot 2022-08-22 034955.png "Screenshot")
+![alt text](https://github.com/leipan1/Recipe-Generator/blob/main/images/ss/Screenshot%202022-08-22%20034955.png?raw=true)
 
 ## Getting Started
 
