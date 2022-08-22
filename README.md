@@ -9,6 +9,9 @@ This website is perfect for those who have a hard time deciding what to make for
 Link to prototype: [Figma](https://www.figma.com/file/miWyqaio7Ogt2hdiPy8Tw9/Recipe-Generator?node-id=0%3A1 "Figma Prototype")<br />
 _The prototype is subject to change. Some features may be missing or partially implemented in the prototype_
 
+
+![Screenshot](images\ss\Screenshot 2022-08-22 034955.png "Screenshot")
+
 ## Getting Started
 
 _TBD_
