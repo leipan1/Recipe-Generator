@@ -167,6 +167,7 @@ hr {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
 .recipe-image{
     height: auto;
     width: 100%;
@@ -213,4 +214,20 @@ hr {
 
 .like-button:hover {
     opacity: 0.7;
-  }
+}
+
+.like-button-liked{
+    border: none;
+    outline: none;
+    color:black;
+    background-color: #46C263;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5vw;
+    float: left;
+    padding: 10px;
+    margin-left: auto;
+    margin-top:0;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
